@@ -11,5 +11,11 @@ and open the template in the editor.
     </head>
     <body>
         <a href="revision.php">Revision</a>
+        
+        <form action="revision.php" method="post">
+            <div>Usuario: <input type="text" name="usuario"></div>
+            <div>Clave: <input type="password" name="clave"></div>
+            <input type="submit" value="Enviar">
+        </form>
     </body>
 </html>

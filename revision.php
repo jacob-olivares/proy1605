@@ -5,11 +5,12 @@ include 'lib/Usuario.php';
 
 $oUsr = new Usuario();
 
-$oUsr->nombre='flopez';
+$oUsr->nombre=$_POST['usuario'];
+$oUsr->clave=$_POST['clave'];
 
-if( $oUsr->VerificarUsuario()){
-    echo "Existe";
+
+if( $oUsr->VerificarUsuarioClave()){
+    echo "Existe clave";
 }else{
-    echo "No Existe";
+    echo "No Existe clave";
 }
-

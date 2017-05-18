@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include 'lib/Conexion.php';
 include 'lib/Usuario.php';
 
@@ -9,8 +9,9 @@ $oUsr->nombre=$_POST['usuario'];
 $oUsr->clave=$_POST['clave'];
 
 
+
 if( $oUsr->VerificarUsuarioClave()){
-    echo "Existe clave";
-}else{
-    echo "No Existe clave";
+    $_SESSION['USR']=$oUsr;
 }
+
+header('Location:http://localhost:8081/proy1605/');

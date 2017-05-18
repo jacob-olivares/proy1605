@@ -14,7 +14,7 @@ and open the template in the editor.
         <?php if(isset($_SESSION['USR'])) { ?>
         <a href="cerrar.php">Cerrar Sesion</a>
         <?php } ?> 
-        <a href="revision.php">Revision</a>
+        <a href="crear.php">Crear Usuario</a>
         <?php if(!isset($_SESSION['USR'])) { ?>
         <form action="revision.php" method="post">
             <div>Usuario: <input type="text" name="usuario"></div>

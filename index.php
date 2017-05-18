@@ -16,6 +16,7 @@ and open the template in the editor.
             <div>Usuario: <input type="text" name="usuario"></div>
             <div>Clave: <input type="password" name="clave"></div>
             <input type="submit" value="Enviar">
+            <input type="text" name="as">
         </form>
     </body>
 </html>
